@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-image:url(/order-summary-component-main/images/pattern-background-desktop.svg);
+    background-size:cover;
+    background-repeat: no-repeat; 
+ 
+}
+.container{
+    box-shadow:4px 4px 4px 4px rgba(167, 166, 166, 0.123);
+    width:400px;
+    height:700px;
+    text-align:center;
+    border-radius:20px;
+    background-color: #fff;
+    font-family:"red hat display";
+    margin:30px auto;
+    
+}
+.container img{
+    width: 100%;
+    border-radius:20px 20px 0 0;
+}
+.container .info {
+    padding:30px 50px;
+}
+.container .info h1{
+    font-weight:900;
+    padding-bottom: 30px;
+    color:hsl(223, 47%, 23%);
+    width: 100%;
+}
+.container .info p {
+    font-size: 16px;
+    line-height: 2rem;
+    color:hsl(224, 23%, 55%);
+}
+.container .plan {
+    width: 90%;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin:auto;
+}
+.container .plan img{
+    width: 15%;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 300%;
+}
+.container .plan p{
+    
+    padding-right: 85px;
+    font-weight:700;
+
+}
+.container .plan p span{
+    font-weight:500;
+    color:hsl(224, 23%, 55%);
+}
+.container .plan a {
+    padding: 18px 0;
+    font-size: 13px;
+    font-weight: 700;
+    padding-left:30px;
+}
+.container .payment{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.container .payment input:first-child{
+    width: 90%;
+    height: 50px;
+    border:none;
+    border-radius: 20px;
+    background-color:hsl(245, 75%, 52%) ;
+    font-weight:900;
+    color: white;
+}
+.container .payment input:last-child{
+    font-weight:900;
+    font-size: 9;
+    color:hsl(224, 23%, 55%);
+    border:none;
+    background-color: white;
+}
+.attribution {
+    padding: 20px;
+     font-size: 16px; text-align: center; 
+    }
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+@media screen and (max-width:375px) {
+    body{
+        background-image: url(/order-summary-component-main/images/pattern-background-mobile.svg);
+    }
+    .container{
+        width:80%;
+        height: 635px;  
+    }
+    .container .info {
+        padding:30px 20px;
+    }
+    .container .info p {
+        padding:0 9px;
+    }
+    .container .plan{
+        justify-content: space-between;
+    }
+    .container .plan img{
+        width:20%;
+        background-color: hsl(225, 100%, 94%);
+        border-radius: 300%;
+        
+    }
+    .container .plan p{
+        font-size: 13px;
+        padding-right: 45px;
+    
+    }
+    .container .plan p span{
+        font-weight:500;
+        color:hsl(224, 23%, 55%);
+    }
+    .container .plan a {
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        padding:0;
+    }
+
+    .container .payment{
+
+        justify-content:space-around;
+       
+    }
+}
