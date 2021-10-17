@@ -70,6 +70,7 @@ body{
     font-size: 13px;
     font-weight: 700;
     padding-left:30px;
+    color:hsl(245, 75%, 52%);
 }
 .container .payment{
     height: 20%;
